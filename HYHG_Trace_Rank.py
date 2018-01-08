@@ -7,11 +7,11 @@ import datetime
 import sys
 
 access_token = MySQL_Auth()
-conn = pymysql.connect(host='localhost', port=3306, user='tlack', passwd=access_token, db='bens_desk')
-engine = create_engine('mysql+pymysql://tlack:%s@localhost/bens_desk' %(access_token))
+conn = pymysql.connect(host='localhost', port=****, user='****', passwd=access_token, db='****')
+engine = create_engine('mysql+pymysql://*****:%s@localhost/*******' %(access_token))
 
-conn2 = pymysql.connect(host='localhost', port=3306, user='tlack', passwd=access_token, db='algo_data')
-engine2 = create_engine('mysql+pymysql://tlack:%s@localhost/algo_data' %(access_token))
+conn2 = pymysql.connect(host='localhost', port=****, user='******', passwd=access_token, db='*******')
+engine2 = create_engine('mysql+pymysql://******:%s@localhost/******' %(access_token))
 
 dstart = datetime.date(2017,6,1)
 dend = datetime.date(2017,6,30)
