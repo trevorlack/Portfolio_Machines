@@ -14,8 +14,8 @@ import multiprocessing as mp
 
 
 #access_token = MySQL_Auth()
-#conn = pymysql.connect(host='localhost', port=3306, user='tlack', passwd=access_token, db='bens_desk')
-#engine = create_engine('mysql+pymysql://tlack:%s@localhost/bens_desk' %(access_token))
+#conn = pymysql.connect(host='localhost', port=****, user='*****', passwd=access_token, db='*******')
+#engine = create_engine('mysql+pymysql://****:%s@localhost/******' %(access_token))
 tic = time.clock()
 
 class Portfolio:
@@ -107,9 +107,7 @@ class Portfolio:
                                                     self.Curr_Portfolio['WEIGHT'].sum())
         return self.Curr_Portfolio
 
-
-
-
+    
 for i in range(5000):
     file = 'C:\\Users\\tlack\Documents\\Python Scripts\\Python HYHG Analysis\\HYHG_Modeling\PICKLES2\\%s.pickle' % (i)
     a = Portfolio()
